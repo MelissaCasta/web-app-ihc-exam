@@ -117,8 +117,18 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (ultimo.comando.includes("enciende el ventilador")) {
                         document.getElementById('ventilador').src = 'VP.gif';
                         console.log("Ventilador Encendido.");
-                    } else if (ultimo.comando.includes("apagar el ventilador")) {
-                        document.getElementById('ventilador').src = 'VA.gif';
+                    } else 
+                        if (ultimo.comando.includes("apagar el ventilador")) {
+                        document.getElementById('ventilador').src = 'VA.png';
+                        console.log("Ventilador Apagado.");
+                    }
+
+                    if (ultimo.comando.includes("enciende el ventilador")) {
+                        document.getElementById('ventilador').src = 'VP.gif';
+                        console.log("Ventilador Encendido.");
+                    } else 
+                        if (ultimo.comando.includes("apaga el ventilador")) {
+                        document.getElementById('ventilador').src = 'VA.pngf';
                         console.log("Ventilador Apagado.");
                     }
 
