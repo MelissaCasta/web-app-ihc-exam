@@ -86,6 +86,22 @@ document.addEventListener("DOMContentLoaded", function () {
                         console.log("Jardín Apagado.");
                     }
 
+                    if (ultimo.comando.includes("enciende el jardín")) {
+                        document.getElementById('juno').src = 'JP.png';
+                        document.getElementById('jdos').src = 'JP.png';
+                        document.getElementById('jtres').src = 'JP.png';
+                        document.getElementById('jcuatro').src = 'JP.png';
+                        document.getElementById('jcinco').src = 'JP.png';
+                        console.log("Jardín Encendido.");
+                    } else if (ultimo.comando.includes("Apaga el jardín")) {
+                        document.getElementById('juno').src = 'JA.png';
+                        document.getElementById('jdos').src = 'JA.png';
+                        document.getElementById('jtres').src = 'JA.png';
+                        document.getElementById('jcuatro').src = 'JA.png';
+                        document.getElementById('jcinco').src = 'JA.png';
+                        console.log("Jardín Apagado.");
+                    }
+
                     // Encendido y Apagado del ventilador.
                     if (ultimo.comando.includes("enciende el ventilador")) {
                         document.getElementById('ventilador').src = 'VP.gif';
