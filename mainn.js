@@ -94,6 +94,13 @@ document.addEventListener("DOMContentLoaded", function () {
                         document.getElementById('ventilador').src = 'VA.gif';
                         console.log("Ventilador Apagado.");
                     }
+                    if (ultimo.comando.includes("enciende el ventilador")) {
+                        document.getElementById('ventilador').src = 'VP.gif';
+                        console.log("Ventilador Encendido.");
+                    } else if (ultimo.comando.includes("Apaga el ventilador")) {
+                        document.getElementById('ventilador').src = 'VA.gif';
+                        console.log("Ventilador Apagado.");
+                    }
 
                     // Encendido y Apagado de las cámaras.
                     if (ultimo.comando.includes("enciende las cámaras")) {
