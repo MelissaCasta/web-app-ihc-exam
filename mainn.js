@@ -77,7 +77,18 @@ document.addEventListener("DOMContentLoaded", function () {
                         document.getElementById('jcuatro').src = 'JP.png';
                         document.getElementById('jcinco').src = 'JP.png';
                         console.log("Jardín Encendido.");
-                    } else if (ultimo.comando.includes("apaga el jardín")) {
+                    } else 
+                        if (ultimo.comando.includes("apaga el jardín")) {
+                        document.getElementById('juno').src = 'JA.png';
+                        document.getElementById('jdos').src = 'JA.png';
+                        document.getElementById('jtres').src = 'JA.png';
+                        document.getElementById('jcuatro').src = 'JA.png';
+                        document.getElementById('jcinco').src = 'JA.png';
+                        console.log("Jardín Apagado.");
+                    }
+                    } else 
+                    
+                    if (ultimo.comando.includes("apagar el jardín")) {
                         document.getElementById('juno').src = 'JA.png';
                         document.getElementById('jdos').src = 'JA.png';
                         document.getElementById('jtres').src = 'JA.png';
