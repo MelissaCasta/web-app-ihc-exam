@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         document.getElementById('jcuatro').src = 'JA.png';
                         document.getElementById('jcinco').src = 'JA.png';
                         console.log("Jardín Apagado.");
-                    }
+                    
                     } else 
                     
                     if (ultimo.comando.includes("apagar el jardín")) {
